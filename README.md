@@ -5,15 +5,15 @@ Este projeto consiste em um sistema de automação residencial que utiliza um m�
 ## Funcionamento e Uso
 
 1. O módulo RFID é responsável pela leitura do cartão de acesso.
-2. Após a leitura do cartão, a porta é aberta.
-3. São coletadas informações de temperatura e umidade por meio de um sensor.
-4. Com base em thresholds (limiares) previamente configurados, o sistema decide quais dispositivos eletrônicos devem ser ligados.
-5. Os dispositivos eletrônicos, como ventiladores, ar-condicionados ou umidificadores, são controlados através de um atuador (relé).
-6. Os dados de temperatura e umidade são registrados em um servidor online, utilizando o protocolo MQTT e o serviço ThingSpeak.
+2. Após a leitura do cartão, são coletadas informações de temperatura, umidade e luminosidade por meio de sensores DHT E LDR.
+3. Os dados de temperatura, umidade e luminosidade são registrados em um servidor online, utilizando o protocolo MQTT e o serviço ThingSpeak.
+4. Os dispositivos eletrônicos, como ventiladores, ar-condicionados ou umidificadores, são controlados através de um atuador (relé).
+5. Com base em thresholds (limiares) previamente configurados, o sistema decide quais dispositivos eletrônicos devem ser ligados.
+6. Em seguida é aberto a porta para o usuário.
 
 ## Software Desenvolvido e Documentação de Código
 
-O software desenvolvido consiste em uma integração entre o módulo RFID, o sensor de temperatura e umidade e o atuador (relé), utilizando a plataforma de desenvolvimento Arduino IDE.
+O software desenvolvido consiste em uma integração entre o módulo RFID, o sensor de temperatura e umidade, o sensor de luminosidade e o atuador (relé), utilizando a plataforma de desenvolvimento Arduino IDE.
 
 A documentação detalhada do código pode ser encontrada no diretório [código](./codigo), onde estão disponíveis os arquivos-fonte e instruções de como configurar o ambiente de desenvolvimento.
 
@@ -22,8 +22,11 @@ A documentação detalhada do código pode ser encontrada no diretório [código
 Os componentes de hardware utilizados neste projeto são os seguintes:
 
 - Plataforma de desenvolvimento: ESP32
-- Sensores de temperatura e umidade
-- Atuador: Relé
+- Sensores de temperatura e umidade DHT22
+- Sensor de luminosidade LDR 
+- Módulo RFID PN532
+- Atuador: Relé 4 Canais
+- Jumpers
 
 Para a montagem do projeto, podem ser necessárias medidas e peças impressas em 3D, dependendo das especificações do ambiente onde será instalado. No entanto, esses detalhes não foram fornecidos nesta documentação.
 
