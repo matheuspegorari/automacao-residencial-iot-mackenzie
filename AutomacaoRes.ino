@@ -1,8 +1,8 @@
 // Bibliotecas
-#include <Adafruit_PN532.h>
-#include <WiFi.h>
-#include "ThingSpeak.h"
-#include "DHT.h"
+#include <Adafruit_PN532.h> //biblioteca do módulo RFID
+#include <WiFi.h> //biblioteca para utilizar o WiFi
+#include "ThingSpeak.h" //biblioteca do broker MQTT ThingSpeak
+#include "DHT.h" //biblioteca do sensor de temperatura/umidade DHT22
 
 // Constantes
 #define SDA_PIN 21 //Utilizado pino D21 do ESP32
