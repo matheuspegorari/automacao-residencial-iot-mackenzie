@@ -15,7 +15,7 @@ Este projeto consiste em um sistema de automação residencial que utiliza um m�
 
 O software desenvolvido consiste em uma integração entre o módulo RFID, o sensor de temperatura e umidade, o sensor de luminosidade e o atuador (relé), utilizando a plataforma de desenvolvimento Arduino IDE.
 
-A documentação detalhada do código pode ser encontrada no diretório [código](./codigo), onde estão disponíveis os arquivos-fonte e instruções de como configurar o ambiente de desenvolvimento.
+O código fonte se encontra na raiz deste repositório e pode ser acessada clicando no link a seguir: [código](AutomacaoRes.ino).
 
 ## Hardware Utilizado
 
