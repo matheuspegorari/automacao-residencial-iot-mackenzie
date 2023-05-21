@@ -38,7 +38,7 @@ O projeto utiliza os seguintes protocolos de comunicação e módulos:
 
 - **WiFi**: Utilizado para conectar o Arduino a uma rede sem fio, possibilitando a comunicação com a internet e serviços remotos.
 
-- **MQTT (Message Queuing Telemetry Transport)**: Utilizado para a comunicação entre o Arduino e o serviço ThingSpeak. O protocolo MQTT é empregado para enviar os dados de temperatura e umidade para o ThingSpeak, onde são armazenados e podem ser analisados. A biblioteca "PubSubClient.h" é utilizada para implementar a comunicação MQTT no projeto.
+- **MQTT (Message Queuing Telemetry Transport)**: Utilizado para a comunicação entre o Arduino e o serviço ThingSpeak. O protocolo MQTT é empregado para enviar os dados de temperatura e umidade para o ThingSpeak, onde são armazenados e podem ser analisados. A biblioteca "ThingSpeak.h" é utilizada para implementar a comunicação MQTT no projeto.
 
 Além dos protocolos mencionados acima, também são utilizados módulos e bibliotecas específicas para cada sensor e atuador:
 
